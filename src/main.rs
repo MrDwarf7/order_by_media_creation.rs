@@ -16,6 +16,11 @@ pub const RUN_OPERATION: bool = false;
 
 // TODO: Add a cli & add a proper logging system lol
 
+// Apparently this can pull `media created at` from mp4 files
+// https://github.com/alfg/mp4-rust
+
+// There's also an ffmpeg crate lol, provides it as a hashmap and you can call .get("creation_time") on it
+
 fn main() -> Result<()> {
     let crawl_type = CrawlType::Parallel;
 
